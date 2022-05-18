@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Register</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title-text">Cash Register</h1>
+        <p class="heading-sub-text">Enter the bill amount and cash given by the customer and know minimum number of notes to return.</p>
+        
+        <!-- bill amount -->
+
+        <div class="input-field">
+
+        <label for="bill-amount" class="input-label">Enter Bill Amount</label>
+        <input type="number" class="input" id="bill-amount"/>
+
+        <!-- cash given  -->
+
+        <label for="cash-given" class="input-label">Enter Cash Amount</label>
+        <input type="number" class="input" id="cash-given"/>
+
+        </div>
+
+
+        <!-- button  -->
+
+        <button id="check-button">Check</button>
+
+        <!-- error message -->
+        <p id="error-message"></p>
+
+        <!-- table  -->
+
+        <table class="table">
+            <caption>
+                Return Change
+            </caption>
+            <tr>
+                <th>No. of notes</th>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+            </tr>
+            <tr>
+                <th>Note Value</th>
+                <td>2000</td>
+                <td>500</td>
+                <td>100</td>
+                <td>20</td>
+                <td>10</td>
+                <td>5</td>
+                <td>1</td>
+            </tr>
+        </table>
+
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
